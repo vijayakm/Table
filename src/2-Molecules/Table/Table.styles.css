@@ -1,0 +1,12 @@
+.table {
+  width: 800px;
+  height: auto;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+.table {
+  width: calc(100% - 10px);
+}
+}

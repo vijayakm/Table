@@ -1,0 +1,185 @@
+.App {
+    font-family: Avenir LT Std;
+    text-align: left;
+    font-weight: 350;
+  }
+  
+  /* styles.css */
+  /* Hide the default checkbox */
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 24px;
+    border: 1px solid #A8A8A8;
+    border-radius: 8px;
+  }
+  
+  /* Customize the appearance when the checkbox is checked */
+  input[type="checkbox"]:checked {
+    cursor: pointer;
+    position: relative;
+    margin-right: 24px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #5C50BB;
+    background: #5C50BB;
+    border-radius: 8px;
+  }
+  
+  /* Style the tick mark using the ::before pseudo-element */
+  input[type="checkbox"]:checked::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    width: 6px;
+    height: 14px;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    transform: translateX(40%) translateY(35%) rotate(45deg);
+  }
+  
+/* styles.css */
+/* Hide the default radio button */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 24px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: 1px solid #A8A8A8;
+  }
+  
+  /* Customize the appearance when the radio button is checked */
+  input[type="radio"]:checked {
+    margin-right: 24px;
+    cursor: pointer;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: #5C50BB;
+    border-radius: 100%;
+}
+  
+  /* Style the tick mark using the ::before pseudo-element */
+  input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 100%;
+    transform: translateX(-10%) translateY(50%);
+  }
+  
+  .sorting {
+    background-color: #dedafa;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    line-height: 20px;
+    text-align: center;
+    img{
+      width: 10px;
+      height: 10px;
+    }
+  }
+  
+  /* Common styles for all device sizes */
+  .table-container {
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+  }
+  
+  .table-header {
+    background-color: #f1f1f1; /* Grey header color */
+    font-family: "Avenir Heavy", sans-serif;
+    font-size: 20px;
+    line-height: 1.75;
+    letter-spacing: 0;
+    padding: 16px 24px;
+  }
+  
+  .table-row {
+    border-bottom: 1px solid #e1e1e1; /* Row divider color */
+    padding: 16px 24px;
+  }
+  
+  .table-row:last-child {
+    border-bottom: none; /* Remove row divider from the last row */
+  }
+  
+  .table-cell {
+    font-family: "Avenir Book", sans-serif;
+    font-size: 20px;
+    line-height: 1.75;
+    letter-spacing: 0.1;
+    padding: 16px 24px;
+    text-align: center;
+  }
+  
+  /* Media Queries for different device sizes */
+  @media (max-width: 1200px) {
+    /* Styles for LG size devices */
+    .table-header {
+      font-size: 18px;
+    }
+  
+    .table-cell {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    /* Styles for MD size devices */
+    .table-header {
+      font-size: 16px;
+    }
+  
+    .table-cell {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Styles for SM size devices */
+    .table-header {
+      font-size: 16px;
+      padding: 12px 24px;
+    }
+  
+    .table-cell {
+      font-size: 16px;
+      padding: 12px 24px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Styles for XS size devices */
+    .table-header {
+      font-size: 16px;
+      padding: 12px 16px;
+    }
+  
+    .table-cell {
+      font-size: 16px;
+      padding: 12px 16px;
+    }
+  }
+  
+  
+  
+  
