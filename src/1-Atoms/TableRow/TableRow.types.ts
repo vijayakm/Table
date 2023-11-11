@@ -1,11 +1,16 @@
-import { ReactNode } from "react";
-import { SelectMode } from "../../utils";
-import { TableColumnProps } from "../TableColumn/TableColumn.types";
+import { ReactNode } from 'react';
 
-export interface TableRowProps<T extends {[id : string] : ReactNode}> {
+import { SelectMode } from '../../utils';
+import { TableColumnProps } from '../TableColumn/TableColumn.types';
+
+export interface IRowData {
+    [id: string]: ReactNode;
+}
+
+export interface TableRowProps<T extends IRowData> {
     rowData: T;
     columns: TableColumnProps[];
-    selectMode ?: SelectMode;
+    selectMode?: SelectMode;
     selected: boolean;
     onSelect: () => void;
-  }
+}

@@ -1,4 +1,4 @@
-import { SortOrder } from "../../utils";
+import { SortOrder } from '../../utils';
 
 export interface TableColumnProps {
     id: string;
@@ -6,4 +6,4 @@ export interface TableColumnProps {
     sortable?: boolean;
     onSort?: (columnId: string) => void;
     sortOrder?: SortOrder;
-  }
+}

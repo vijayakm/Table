@@ -9,6 +9,7 @@
     "test": "jest",
     "test:watch": "yarn test --watch",
     "lint": "eslint src --ext ts,tsx",
+    "format": "prettier --write \"src/**/*.{tsx,ts}\"",
     "lint:fix": "yarn lint --fix",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "update-deps": "node ./src/config/update-deps.mjs",
@@ -61,6 +62,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "sass": "1.69.5",
     "storybook-builder-vite": "0.1.23",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0"
   }
 }
