@@ -43,22 +43,22 @@ This is an easy-to-use React Data Table component simplifies the display of tabu
 2. **Run**:
 
     ```bash
-    # Application 
-    yarn dev
-    # Storybook 
-    yarn ios
+        # Application 
+        yarn dev
+        # Storybook 
+        yarn ios
     ```
 
 2. **Other useful command**:
     ```bash
-    # Prettier 
-    yarn format
+        # Prettier 
+        yarn format
 
-    # check eslint 
-    yarn lint
+        # check eslint 
+        yarn lint
 
-    # unit test
-    yarn test
+        # unit test
+        yarn test
     ```
 
 ## Usage
