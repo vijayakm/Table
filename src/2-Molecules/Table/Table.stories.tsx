@@ -1,7 +1,6 @@
 import { StoryFn, StoryObj } from '@storybook/addons';
 import React from 'react';
 
-import '../../theme.scss';
 import Table from './Table';
 import { TableProps } from './Table.types';
 
