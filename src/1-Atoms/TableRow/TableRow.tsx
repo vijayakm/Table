@@ -12,22 +12,20 @@ const TableRow = <T extends IRowData>(props: TableRowProps<T>) => {
             style={selected ? tableStyles.selectedRow : null}
             onClick={onSelect}
         >
-            {selectMode !== 'None' && (
-                <td className="table-cell" style={tableStyles.cell}>
-                    {selectMode === 'CheckBox' ? (
-                        <input type="checkbox" checked={selected} readOnly />
-                    ) : (
-                        <input
-                            type="radio"
-                            className="none"
-                            checked={selected}
-                            readOnly
-                        />
-                    )}
-                </td>
-            )}
-            {columns.map(({ id }) => (
+            {columns.map(({ id }, index) => (
                 <td className="table-cell" key={id} style={tableStyles.cell}>
+                    {index === 0 && selectMode !== 'None' ? (
+                        selectMode === 'CheckBox' ? (
+                            <input type="checkbox" checked={selected} readOnly />
+                        ) : (
+                            <input
+                                type="radio"
+                                className="none"
+                                checked={selected}
+                                readOnly
+                            />
+                        )
+                    ) : null}
                     {rowData?.[id]}
                 </td>
             ))}

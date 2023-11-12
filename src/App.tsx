@@ -44,14 +44,23 @@ export const tableColumns = [
     {
         id: 'availability',
         label: '3G Availability',
-        sortable: true,
     },
 ];
 
 export function App() {
     return (
-        <div>
+        <div className="App">
+            <h2>Table Component</h2>
+
+            <h5> Without Row Selection</h5>
+            <Table data={tableData} columns={tableColumns} />
+
+            <h5> With Checkbox </h5>
             <Table data={tableData} columns={tableColumns} selectMode={'CheckBox'} />
+
+            <h5> With Radio Button</h5>
+
+            <Table data={tableData} columns={tableColumns} selectMode={'Radio'} />
         </div>
     );
 }

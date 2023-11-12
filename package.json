@@ -9,15 +9,20 @@
     "test": "jest",
     "test:watch": "yarn test --watch",
     "lint": "eslint src --ext ts,tsx",
+    "storybook": "storybook dev",
+    "build-storybook": "storybook build",
     "format": "prettier --write \"src/**/*.{tsx,ts}\"",
     "lint:fix": "yarn lint --fix",
     "type-check": "tsc --project tsconfig.json --pretty --noEmit",
-    "update-deps": "node ./src/config/update-deps.mjs",
-    "storybook:build": "build-storybook -o dist/storybook",
-    "storybook": "storybook"
+    "update-deps": "node ./src/config/update-deps.mjs"
   },
   "dependencies": {
-    "@storybook/addon-docs": "6.5.16",
+    "@storybook/addon-actions": "^7.6.0-alpha.4",
+    "@storybook/addon-essentials": "^7.6.0-alpha.4",
+    "@storybook/addon-links": "^7.6.0-alpha.4",
+    "@storybook/addons": "^7.5.3",
+    "@storybook/preset-create-react-app": "^7.6.0-alpha.4",
+    "@storybook/react": "^7.6.0-alpha.4",
     "@vitejs/plugin-react": "4.1.1",
     "babel-eslint": "10.1.0",
     "eslint": "8.53.0",
@@ -36,7 +41,7 @@
     "react-dom": "18.2.0",
     "react-router-dom": "^6.18.0",
     "react-test-renderer": "18.2.0",
-    "storybook": "6.5.14",
+    "save-dev": "^0.0.1-security",
     "ts-jest": "29.1.1",
     "ts-node": "10.9.1",
     "vite": "4.5.0",
@@ -46,23 +51,21 @@
   },
   "main": "index.js",
   "devDependencies": {
-    "@storybook/addon-actions": "7.4.6",
-    "@storybook/addon-essentials": "7.4.6",
-    "@storybook/addon-interactions": "7.4.6",
-    "@storybook/addon-links": "7.4.6",
-    "@storybook/cli": "^7.5.3",
-    "@storybook/react": "7.4.6",
-    "@storybook/react-vite": "7.4.6",
-    "@storybook/testing-library": "0.2.2",
+    "@storybook/addon-coverage": "^0.0.9",
+    "@storybook/cli": "^7.6.0-alpha.4",
+    "@storybook/react-vite": "^7.6.0-alpha.4",
     "@testing-library/jest-dom": "6.1.4",
     "@testing-library/react": "14.1.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@types/jest": "29.5.8",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
     "jest-environment-jsdom": "^29.7.0",
     "sass": "1.69.5",
-    "storybook-builder-vite": "0.1.23",
-    "typescript": "5.2.2",
-    "@trivago/prettier-plugin-sort-imports": "^4.2.0"
+    "storybook": "^7.6.0-alpha.4",
+    "typescript": "5.2.2"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
   }
 }

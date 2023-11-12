@@ -11,7 +11,7 @@ const TableColumn = (props: TableColumnProps) => {
     const handleColumnClick = () => {
         if (sortable) {
             onSort(id);
-            setSortedColumnId(id); // Set the sorted column ID
+            setSortedColumnId(id);
         }
     };
     return (
@@ -21,15 +21,12 @@ const TableColumn = (props: TableColumnProps) => {
             onClick={handleColumnClick}
         >
             {label}
-            {sortable &&
-                sortedColumnId === id && ( // Show the sorting icon only for the sorted column
-                    <span className="sorting">
-                        {sortOrder === 'Up' && <img src={SortingUp} alt="Sorting Up" />}
-                        {sortOrder === 'Down' && (
-                            <img src={SortingDown} alt="Sorting Down" />
-                        )}
-                    </span>
-                )}
+            {sortable && sortedColumnId === id && (
+                <span className="sorting">
+                    {sortOrder === 'Up' && <img src={SortingUp} alt="Sorting Up" />}
+                    {sortOrder === 'Down' && <img src={SortingDown} alt="Sorting Down" />}
+                </span>
+            )}
         </th>
     );
 };

@@ -1,7 +1,23 @@
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: Avenir;
+  color: black;
+}
+body {
+  padding-top: 20px;
+  background: #fff;
+}
+
 .App {
     font-family: Avenir LT Std;
     text-align: left;
     font-weight: 350;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
   }
   
   /* styles.css */
@@ -74,12 +90,13 @@ input[type="radio"] {
   input[type="radio"]:checked::before {
     content: '';
     position: absolute;
+    position: absolute;
     left: 10px;
     width: 16px;
     height: 16px;
     background-color: #fff;
     border-radius: 100%;
-    transform: translateX(-10%) translateY(50%);
+    transform: translateX(-16%) translateY(45%);
   }
   
   .sorting {
@@ -99,10 +116,13 @@ input[type="radio"] {
   
   /* Common styles for all device sizes */
   .table-container {
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 24px;
+      width: auto;
+      height: auto;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+      border-radius: 16px;
+      overflow: hidden;
   }
+
   
   .table-header {
     background-color: #f1f1f1; /* Grey header color */
@@ -128,7 +148,6 @@ input[type="radio"] {
     line-height: 1.75;
     letter-spacing: 0.1;
     padding: 16px 24px;
-    text-align: center;
   }
   
   /* Media Queries for different device sizes */

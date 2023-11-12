@@ -1,12 +1,13 @@
-import React, { ReactNode, useState } from 'react';
+import React, { useState } from 'react';
 
 import { TableColumn, TableRow } from '../../1-Atoms';
+import { IRowData } from '../../1-Atoms/TableRow/TableRow.types';
 import { tableStyles } from '../../Styles';
 import { SortOrder } from '../../utils';
 import { handleSelection, sortData } from '../../utils/Functions';
 import { TableProps } from './Table.types';
 
-const Table = <T extends { [id: string]: ReactNode }>(props: TableProps<T>) => {
+const Table = <T extends IRowData>(props: TableProps<T>) => {
     const { data, columns, selectMode = 'None', onSelectionChange } = props;
     const [sortedData, setSortedData] = useState<T[]>(data);
     const [sortOrder, setSortOrder] = useState<SortOrder>('None');
@@ -35,7 +36,6 @@ const Table = <T extends { [id: string]: ReactNode }>(props: TableProps<T>) => {
         <table className="table-container" style={tableStyles.container}>
             <thead>
                 <tr>
-                    <th className="table-header" style={tableStyles.header} />
                     {columns.map((column) => (
                         <TableColumn
                             key={column.id}
