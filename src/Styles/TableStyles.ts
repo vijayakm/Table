@@ -13,7 +13,7 @@ const tableStyles = {
         borderTop: defaultTheme.borderTop,
     },
     selectedRow: {
-        background: 'defaultTheme.selectionColor',
+        backgroundColor: defaultTheme.selectionColor,
     },
 } as const;
 
