@@ -46,7 +46,7 @@ This is an easy-to-use React Data Table component simplifies the display of tabu
         # Application 
         yarn dev
         # Storybook 
-        yarn ios
+        yarn storybook
     ```
 
 2. **Other useful command**:
