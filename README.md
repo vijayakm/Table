@@ -6,14 +6,14 @@ This is an easy-to-use React Data Table component simplifies the display of tabu
 
 **Table Component**
 
-![Data Table](demo/plainTable.png)
+![Data Table](/demo/plainTable.png)
 
 **Table With Radio Button**
-![Data Table](demo/RadioTable.png)
+![Data Table](/demo/RadioTable.png)
 
 **Table With Checkbox**
 
-![Data Table](demo/CheckBoxTable.png)
+![Data Table](/demo/CheckBoxTable.png)
 
 ## Tech Stack
 
